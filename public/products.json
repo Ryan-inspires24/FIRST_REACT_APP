@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Earbuds",
+    "description": "Compact and high-quality Bluetooth earbuds with noise cancellation."
+  },
+  {
+    "id": 2,
+    "name": "Smartwatch X200",
+    "description": "Stylish smartwatch with fitness tracking and message notifications."
+  },
+  {
+    "id": 3,
+    "name": "EcoWater Bottle",
+    "description": "Reusable stainless steel water bottle that keeps drinks cold for 24 hours."
+  },
+  {
+    "id": 4,
+    "name": "ErgoFlex Office Chair",
+    "description": "Ergonomic office chair with lumbar support and adjustable height."
+  },
+  {
+    "id": 5,
+    "name": "Mini Projector Pro",
+    "description": "Portable projector with HDMI and USB support for home entertainment."
+  },
+  {
+    "id": 6,
+    "name": "Gaming Mouse GX9",
+    "description": "High-precision gaming mouse with customizable DPI and RGB lighting."
+  },
+  {
+    "id": 7,
+    "name": "Notebook Pro 15",
+    "description": "Lightweight and powerful laptop with 16GB RAM and 512GB SSD."
+  },
+  {
+    "id": 8,
+    "name": "Smart Lamp Plus",
+    "description": "Wi-Fi enabled LED lamp with touch control and voice assistant support."
+  },
+  {
+    "id": 9,
+    "name": "Fitness Tracker Band",
+    "description": "Waterproof fitness band with heart rate monitor and sleep tracking."
+  },
+  {
+    "id": 10,
+    "name": "Portable SSD 1TB",
+    "description": "Fast and reliable external SSD with USB-C support and encryption."
+  }
+]
