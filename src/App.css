@@ -63,7 +63,7 @@
   justify-content: space-between;
   align-items: center;
   font-size: 3em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   font-family: 'Times New Roman', Times, serif;
   text-shadow: #131516 0px 0px 5px;
 }
@@ -81,9 +81,27 @@
   background-color: #00bfff;
   cursor: pointer;
 }
-
+p{
+  font-size: 1.2em;
+  color: #5d5454;
+  margin: 0.5em 0;
+  font-family: sans-serif;
+}
 .description {
-  font-size: 1.3em;
-  color: #666;
+  font-size: 1.5em;
+  color: #5d5454;
   margin: 1em 0;
+}
+
+.product-image {
+  width: 400px;
+  height: 400px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 1em;
+}
+.product-image:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
 }

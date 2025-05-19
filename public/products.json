@@ -2,51 +2,61 @@
   {
     "id": 1,
     "name": "Wireless Earbuds",
-    "description": "Compact and high-quality Bluetooth earbuds with noise cancellation."
+    "description": "Compact and high-quality Bluetooth earbuds with noise cancellation.",
+    "image": "https://m.media-amazon.com/images/I/51fkoZe-K6L._AC_UF894%2C1000_QL80_.jpg"
   },
   {
     "id": 2,
     "name": "Smartwatch X200",
-    "description": "Stylish smartwatch with fitness tracking and message notifications."
+    "description": "Stylish smartwatch with fitness tracking and message notifications.",
+    "image": "https://static.wixstatic.com/media/8182aa_d7c0c5d28bf441e084f4f0263f186ee8~mv2.jpg/v1/fill/w_980%2Ch_735%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/8182aa_d7c0c5d28bf441e084f4f0263f186ee8~mv2.jpg"
   },
   {
     "id": 3,
     "name": "EcoWater Bottle",
-    "description": "Reusable stainless steel water bottle that keeps drinks cold for 24 hours."
+    "description": "Reusable stainless steel water bottle that keeps drinks cold for 24 hours.",
+    "image": "https://echowater.com/cdn/shop/files/PDP-Flask-Screen.jpg?v=1742381656&width=64"
   },
   {
     "id": 4,
     "name": "ErgoFlex Office Chair",
-    "description": "Ergonomic office chair with lumbar support and adjustable height."
+    "description": "Ergonomic office chair with lumbar support and adjustable height.",
+    "image": "https://www.vertuliving.com/cdn/shop/files/Black_Easton_Ergonomic_Office_Chair_2_689b1179-795a-4358-8e9f-6389baaa65e3.jpg?v=1705571807&width=1600"
   },
   {
     "id": 5,
     "name": "Mini Projector Pro",
-    "description": "Portable projector with HDMI and USB support for home entertainment."
+    "description": "Portable projector with HDMI and USB support for home entertainment.",
+    "image": "https://m.media-amazon.com/images/I/51qyLNRqjeL.__AC_SX300_SY300_QL70_FMwebp_.jpg"
   },
   {
     "id": 6,
     "name": "Gaming Mouse GX9",
-    "description": "High-precision gaming mouse with customizable DPI and RGB lighting."
+    "description": "High-precision gaming mouse with customizable DPI and RGB lighting.",
+    "image": "https://images.pexels.com/photos/1486294/pexels-photo-1486294.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
     "id": 7,
     "name": "Notebook Pro 15",
-    "description": "Lightweight and powerful laptop with 16GB RAM and 512GB SSD."
+    "description": "Lightweight and powerful laptop with 16GB RAM and 512GB SSD.",
+    "image": "https://www.xiaomibase.com/wp-content/uploads/2021/04/portatil-Xiaomi-Mi-Notebook-Pro-15-2021-Espana-comprar-a-500x500.png"
   },
   {
     "id": 8,
     "name": "Smart Lamp Plus",
-    "description": "Wi-Fi enabled LED lamp with touch control and voice assistant support."
+    "description": "Wi-Fi enabled LED lamp with touch control and voice assistant support.",
+    "image": "https://m.media-amazon.com/images/I/71cl6751y5L._AC_SY741_.jpg"
   },
   {
     "id": 9,
     "name": "Fitness Tracker Band",
-    "description": "Waterproof fitness band with heart rate monitor and sleep tracking."
+    "description": "Waterproof fitness band with heart rate monitor and sleep tracking.",
+    "image": "https://m.media-amazon.com/images/I/81KpKPb0pzL._AC_UY218_.jpg"
   },
   {
     "id": 10,
     "name": "Portable SSD 1TB",
-    "description": "Fast and reliable external SSD with USB-C support and encryption."
+    "description": "Fast and reliable external SSD with USB-C support and encryption.",
+    "image": "https://echowater.com/cdn/shop/files/FlaskProduce5.jpg?v=1742381656&width=64"
   }
 ]

@@ -35,11 +35,11 @@ function App() {
 
       {isLoading && <p className="loading">Loading...</p>}
       {error && <p className="error">Error: {error.message}</p>}
-
-      {data && (
+      {showProducts &&data && (
         <ul className="product-list">
           {data.map(product => (
             <li key={product.id} className="product_item">
+              <img className="product-image" src={product.image} alt={product.name} />
               <h2 className="font-semibold">{product.id}. {product.name}</h2>
               <p>{product.description}</p>
             </li>
