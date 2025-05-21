@@ -1,5 +1,3 @@
-import { useQuery } from '@tanstack/react-query'
-import { useState } from 'react'
 import './App.css'
 import ContactPage from './pages/contact'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
