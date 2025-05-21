@@ -1,52 +1,24 @@
 import { useQuery } from '@tanstack/react-query'
 import { useState } from 'react'
 import './App.css'
+import ContactPage from './pages/contact'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import HomePage from './pages/home'
+import AboutPage from './pages/about'
+import ProductsPage from './pages/products'
+import ProductPage from './pages/product'
 
-const fetchProducts = async () => {
-  const response = await fetch('/products.json')
-  if (!response.ok) throw new Error('Network response was not ok')
-  return response.json()
-}
-
-
-function App() {
-  const [showProducts, setShowProducts] = useState(false)
-
-  const toggleProducts = () => {
-    setShowProducts(prev => !prev)
-  }
-
-  const { data, isLoading, error } = useQuery({
-    queryKey: ['products'],
-    queryFn: fetchProducts,
-    enabled: showProducts
-  })
-
+function App(){
   return (
-    <div>
-      <h1 className="header">Product Viewer</h1>
-
-      {!showProducts && <p className="description">Nothing to see here! Click the button below to load the products</p>}
-      {showProducts && <p className="description">Click the button again to hide the products</p>}
-
-      <button onClick={toggleProducts} className="products_button">
-        {showProducts ? 'Hide Products' : 'Show Products'}
-      </button>
-
-      {isLoading && <p className="loading">Loading...</p>}
-      {error && <p className="error">Error: {error.message}</p>}
-      {showProducts &&data && (
-        <ul className="product-list">
-          {data.map(product => (
-            <li key={product.id} className="product_item">
-              <img className="product-image" src={product.image} alt={product.name} />
-              <h2 className="font-semibold">{product.id}. {product.name}</h2>
-              <p>{product.description}</p>
-            </li>
-          ))}
-        </ul>
-      )}
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path='/products' element={<ProductsPage />} />
+        <Route path='/products/:id' element={<ProductPage />} />
+      </Routes>
+    </Router>
   )
 }
 export default App
