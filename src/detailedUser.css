@@ -1,0 +1,110 @@
+.profile-container {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+  border-radius: 20px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  font-family: 'Inter', sans-serif;
+  transition: all 0.3s ease;
+}
+
+/* Large circular image */
+.profile-image-wrapper {
+  flex-shrink: 0;
+  position: relative;
+}
+
+.profile-picture {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #eeeeee;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.profile-picture:hover {
+  transform: scale(1.05);
+}
+
+/* Fallback avatar */
+.profile-placeholder {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: #ccc;
+  color: white;
+  font-size: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Right info section */
+.profile-info {
+  flex: 1;
+  padding-top: 10px;
+}
+
+.username {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.role-badge {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.email {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #333;
+  white-space: pre-wrap;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .profile-picture,
+  .profile-placeholder {
+    width: 180px;
+    height: 180px;
+    font-size: 80px;
+  }
+
+  .username {
+    font-size: 2rem;
+  }
+
+  .email,
+  .description {
+    font-size: 1rem;
+  }
+}

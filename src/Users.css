@@ -1,0 +1,53 @@
+/* Users.css */
+
+.user-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.user-item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 20px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.user-item:hover {
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+}
+
+.user-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #4a90e2;
+}
+
+.user-info h3 {
+  margin: 0 0 6px 0;
+  font-size: 1.25rem;
+  color: #222;
+}
+
+.user-info p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+.user-info span {
+  font-weight: bold;
+  color: #4a90e2;
+}

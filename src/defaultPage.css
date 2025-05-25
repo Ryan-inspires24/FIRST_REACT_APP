@@ -1,0 +1,106 @@
+/* Root Reset & Theme Variables */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.light {
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+body.dark {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+
+.default-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  background-color: inherit;
+  padding: 15px 30px;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.7rem;
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  color: #1e2a38;
+  letter-spacing: 1px;
+  font-style: italic;
+  background: linear-gradient(90deg, #0077cc, #00c6ff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  font-size: 0.95rem; /* Smaller, more refined */
+  padding: 6px 10px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: currentColor;
+  transition: width 0.3s ease;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.nav a:hover {
+  color: #0077cc; /* Optional accent on hover */
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: inherit;
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px 20px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: inherit;
+  border-top: 1px solid rgba(100, 100, 100, 0.1);
+  font-size: 0.95rem;
+}

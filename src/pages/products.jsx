@@ -2,6 +2,8 @@ import React from "react";
 import { useState } from 'react'
 import { useQuery } from '@tanstack/react-query'
 import { Link } from 'react-router-dom'
+import DefaultPage from "../DefaultPage";
+import '../products.css'; 
 
 const fetchProducts = async () => {
     const response = await fetch('./products.json')
@@ -24,10 +26,11 @@ function ProductsPage() {
     })
 
     return (
+<DefaultPage>
         <div>
-            <h1 className="header">Product Viewer</h1>
+            <h1 className="header">View our latest products!!!</h1>
 
-            {!showProducts && <p className="description">Nothing to see here! Click the button below to load the products</p>}
+            {!showProducts && <p className="description">Nothing to see here until you click the button below to load the products.</p>}
             {showProducts && <p className="description">Click the button again to hide the products</p>}
 
             <button onClick={toggleProducts} className="products_button">
@@ -53,7 +56,8 @@ function ProductsPage() {
                 </ul>
             )}
         </div>
-    )
+    </DefaultPage>
+)
 }
 export default ProductsPage;
 
