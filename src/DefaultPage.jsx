@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './defaultPage.css'; // External stylesheet
+import UserProfile from './pages/detailedUser';
 
 const DefaultPage = ({ children }) => {
+    const username = localStorage.getItem('username') || null;
     const [theme, setTheme] = useState('light');
-
+    const userId = localStorage.getItem('userId') || null;
     useEffect(() => {
         const savedTheme = localStorage.getItem('theme');
         if (savedTheme) setTheme(savedTheme);
@@ -19,6 +21,13 @@ const DefaultPage = ({ children }) => {
         setTheme(prev => (prev === 'light' ? 'dark' : 'light'));
     };
 
+    const handleLogout = () => {
+        localStorage.removeItem('logginToken');
+        localStorage.removeItem('username');
+        localStorage.removeItem('userId');
+        window.location.reload(); 
+    };
+
     return (
         <div className={`default-layout ${theme}`}>
             <header className="header">
@@ -29,10 +38,16 @@ const DefaultPage = ({ children }) => {
                     <Link to="/about">About</Link>
                     <Link to="/contact">Contact</Link>
                     <Link to="/products">Products</Link>
-                    <Link to="/login">Login/Register</Link>
+                    {!username && <Link to="/login">Login/Register</Link>}
+                    {username && (
+                        <a href="#" onClick={handleLogout} style={{ cursor: 'pointer' }}>
+                            Logout
+                        </a>
+
+                    )}
                 </nav>
                 <button className="theme-toggle" onClick={toggleTheme}>
-                    {theme === 'light' ? '🌙' : '☀️'}
+                    {theme === 'light' ? 'Dark mode🌙' : 'Light mode☀️'}
                 </button>
             </header>
 

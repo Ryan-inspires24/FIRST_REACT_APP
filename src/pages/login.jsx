@@ -38,6 +38,9 @@ function LoginPage() {
 
             const result = await response.json();
             setIsLoggedIn(true);
+            localStorage.setItem("logginToken", result.token);
+            localStorage.setItem("username", result.username);  
+            localStorage.setItem("userId", result.user_id);  
             alert('Login successful! Welcome ' + result.username);
             setTimeout(() => {
                 navigate('/users');
