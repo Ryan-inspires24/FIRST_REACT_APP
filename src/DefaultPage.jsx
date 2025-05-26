@@ -20,19 +20,26 @@ const DefaultPage = ({ children }) => {
     const toggleTheme = () => {
         setTheme(prev => (prev === 'light' ? 'dark' : 'light'));
     };
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const toggleMenu = () => setMenuOpen(!menuOpen);
 
     const handleLogout = () => {
         localStorage.removeItem('logginToken');
         localStorage.removeItem('username');
         localStorage.removeItem('userId');
-        window.location.reload(); 
+        window.location.reload();
     };
 
     return (
         <div className={`default-layout ${theme}`}>
             <header className="header">
                 <Link to="/" className="logo">RyanInspires</Link>
-                <nav className="nav">
+                <button className="hamburger" onClick={toggleMenu} aria-label="Menu">
+                    ☰
+                </button>
+
+                <nav className={`nav ${menuOpen ? 'open' : ''}`}>
                     <Link to="/">Home</Link>
                     <Link to="/users">Users</Link>
                     <Link to="/about">About</Link>

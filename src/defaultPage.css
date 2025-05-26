@@ -112,3 +112,55 @@ body.dark {
   margin-top: 5px;
 
 }
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.4rem;
+  }
+
+  .welcome-message {
+    font-size: 1.2rem;
+  }
+
+  .main-content {
+    padding: 20px 10px;
+  }
+}
+/* Hamburger Styles */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* Mobile Nav */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    background-color: inherit;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .nav a {
+    padding: 10px 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.1);
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
